@@ -5787,7 +5787,6 @@ GameObject:
   - component: {fileID: 271113074}
   - component: {fileID: 271113073}
   - component: {fileID: 271113072}
-  - component: {fileID: 271113071}
   - component: {fileID: 271113076}
   m_Layer: 5
   m_Name: Question 1
@@ -5796,18 +5795,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &271113071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 271113070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9a7456970d30471abe7c470d83dfd53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &271113072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6427,7 +6414,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 271113071}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ToPlanetTwo, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
@@ -7043,7 +7030,7 @@ GameObject:
   - component: {fileID: 821876887}
   - component: {fileID: 821876886}
   - component: {fileID: 821876885}
-  - component: {fileID: 821876884}
+  - component: {fileID: 821876888}
   m_Layer: 5
   m_Name: NEXT
   m_TagString: Untagged
@@ -7071,18 +7058,6 @@ RectTransform:
   m_AnchoredPosition: {x: 368, y: -116}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &821876884
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 821876882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9a7456970d30471abe7c470d83dfd53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &821876885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7127,9 +7102,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1409152837}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ToPlanetTwo, Assembly-CSharp
         m_MethodName: StartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 821876888}
+        m_TargetAssemblyTypeName: QuestionNavigation, Assembly-CSharp
+        m_MethodName: GoToNextQuestion
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7177,6 +7164,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 821876882}
   m_CullTransparentMesh: 1
+--- !u!114 &821876888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821876882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fcf276e180d0448c86536db24cf1fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentQuestion: {fileID: 1409152835}
+  nextQuestion: {fileID: 1288163354}
 --- !u!1 &833738297
 GameObject:
   m_ObjectHideFlags: 0
@@ -7273,7 +7274,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1409152837}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ToPlanetTwo, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
@@ -7892,6 +7893,7 @@ GameObject:
   - component: {fileID: 1000135448}
   - component: {fileID: 1000135447}
   - component: {fileID: 1000135446}
+  - component: {fileID: 1000135450}
   m_Layer: 5
   m_Name: NEXT
   m_TagString: Untagged
@@ -7926,7 +7928,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000135444}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9a7456970d30471abe7c470d83dfd53, type: 3}
   m_Name: 
@@ -7975,9 +7977,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 271113071}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ToPlanetTwo, Assembly-CSharp
         m_MethodName: StartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1000135450}
+        m_TargetAssemblyTypeName: QuestionNavigation, Assembly-CSharp
+        m_MethodName: GoToNextQuestion
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8025,6 +8039,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000135444}
   m_CullTransparentMesh: 1
+--- !u!114 &1000135450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000135444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fcf276e180d0448c86536db24cf1fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentQuestion: {fileID: 271113070}
+  nextQuestion: {fileID: 1409152835}
 --- !u!1 &1147224062
 GameObject:
   m_ObjectHideFlags: 0
@@ -9363,7 +9391,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1409152837}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ToPlanetTwo, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
@@ -9782,7 +9810,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1409152837}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ToPlanetTwo, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
@@ -10066,7 +10094,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 271113071}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ToPlanetTwo, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
@@ -10267,8 +10295,8 @@ GameObject:
   - component: {fileID: 1409152840}
   - component: {fileID: 1409152839}
   - component: {fileID: 1409152838}
-  - component: {fileID: 1409152837}
   - component: {fileID: 1409152836}
+  - component: {fileID: 1409152842}
   m_Layer: 5
   m_Name: Question 2
   m_TagString: Untagged
@@ -10286,18 +10314,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e1c373c56c144d73b9afee7dfa0eed2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1409152837
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1409152835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9a7456970d30471abe7c470d83dfd53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1409152838
@@ -10391,6 +10407,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1409152842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409152835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fcf276e180d0448c86536db24cf1fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentQuestion: {fileID: 1409152835}
+  nextQuestion: {fileID: 1288163354}
 --- !u!1 &1450262429
 GameObject:
   m_ObjectHideFlags: 0
@@ -10848,7 +10878,7 @@ GameObject:
   - component: {fileID: 1626762541}
   - component: {fileID: 1626762540}
   m_Layer: 5
-  m_Name: Button
+  m_Name: BACK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10918,9 +10948,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 271113076}
-        m_TargetAssemblyTypeName: Main, Assembly-CSharp
-        m_MethodName: Starting
+      - m_Target: {fileID: 1000135450}
+        m_TargetAssemblyTypeName: QuestionNavigation, Assembly-CSharp
+        m_MethodName: GoToNextQuestion
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11197,7 +11227,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 271113071}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ToPlanetTwo, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
@@ -11759,7 +11789,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1409152837}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ToPlanetTwo, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
@@ -11905,7 +11935,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 271113071}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ToPlanetTwo, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
