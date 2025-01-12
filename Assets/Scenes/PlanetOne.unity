@@ -176,8 +176,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "I recognize they\u2019re quiet but decide it\u2019s best to let them speak
-    up when they\u2019re ready."
+  m_text: "I recognize they\u2019re quiet but decide it\u2019s best to\nlet them
+    speak up when they\u2019re ready."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -313,8 +313,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: I sense they might have something valuable to add, so I gently steer the
-    conversation to give them an opening.
+  m_text: "I sense they might have something \nvaluable to add, so I gently steer
+    the \nconversation to give them an opening."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5420,8 +5420,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "While on a mission, you\u2019re in charge of leading a diverse group of
-    explorers. One crew member, who usually remains silent, is being overlooked in
-    discussions. How do you address this internally?"
+    explorers. \nOne crew member, who usually remains silent, is being overlooked
+    in discussions. How do you address this internally?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6092,8 +6092,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: I naturally feel responsible for making sure everyone is heard, and immediately
-    find a way to involve them in the conversation.
+  m_text: 'I naturally feel responsible for making sure everyone is heard, and immediately
+    find a way
+
+    to involve them in the conversation.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6667,7 +6669,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: I feel uncomfortable and avoid engaging, focusing entirely on my own tasks.
+  m_text: 'I feel uncomfortable and avoid engaging,
+
+    focusing entirely on my
+    own tasks.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6803,7 +6808,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ' I assume they prefer being alone and decide not to engage at all.'
+  m_text: ' I assume they prefer being alone
+
+    and decide not to engage at all.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8110,7 +8117,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "I focus on the discussion and assume they\u2019re comfortable staying
+  m_text: "I focus on the discussion and assume \nthey\u2019re comfortable staying
     quiet."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8247,7 +8254,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'I feel a strong urge to include them but decide to wait for the right
+  m_text: 'I feel a strong urge to include them but decide
+
+    to wait for the right
     moment to engage. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9917,9 +9926,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You're in the middle of a deep space exploration, and you meet a crew member
-    who's visibly withdrawn. How do you respond internally when you notice their
-    isolation?
+  m_text: 'You''re in the middle of a deep space exploration,
+
+    and you meet a
+    crew member who''s visibly withdrawn.
+
+    How do you respond internally when
+    you notice their isolation?'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11436,7 +11449,7 @@ GameObject:
   - component: {fileID: 1835909580}
   - component: {fileID: 1835909579}
   m_Layer: 5
-  m_Name: Button
+  m_Name: BACK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
