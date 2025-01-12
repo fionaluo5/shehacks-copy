@@ -5513,7 +5513,7 @@ GameObject:
   - component: {fileID: 255604676}
   - component: {fileID: 255604675}
   - component: {fileID: 255604674}
-  - component: {fileID: 255604673}
+  - component: {fileID: 255604677}
   m_Layer: 5
   m_Name: NEXT
   m_TagString: Untagged
@@ -5541,18 +5541,6 @@ RectTransform:
   m_AnchoredPosition: {x: 368, y: -116}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &255604673
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 255604671}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9a7456970d30471abe7c470d83dfd53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &255604674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5597,9 +5585,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1700354465}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ToPlanetTwo, Assembly-CSharp
         m_MethodName: StartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 255604677}
+        m_TargetAssemblyTypeName: QuestionNavigation, Assembly-CSharp
+        m_MethodName: GoToNextQuestion
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5647,6 +5647,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 255604671}
   m_CullTransparentMesh: 1
+--- !u!114 &255604677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255604671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fcf276e180d0448c86536db24cf1fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentQuestion: {fileID: 1700354463}
+  nextQuestion: {fileID: 1713307721}
 --- !u!1 &290593617
 GameObject:
   m_ObjectHideFlags: 0
@@ -5743,7 +5757,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1700354465}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ToPlanetTwo, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
@@ -6214,8 +6228,8 @@ GameObject:
   - component: {fileID: 400175192}
   - component: {fileID: 400175191}
   - component: {fileID: 400175190}
-  - component: {fileID: 400175189}
   - component: {fileID: 400175188}
+  - component: {fileID: 400175194}
   m_Layer: 5
   m_Name: Question 3
   m_TagString: Untagged
@@ -6233,18 +6247,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e1c373c56c144d73b9afee7dfa0eed2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &400175189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 400175187}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9a7456970d30471abe7c470d83dfd53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &400175190
@@ -6339,6 +6341,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &400175194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400175187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 221d5f3264b224d588744c208f0a49a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &531172340
 GameObject:
   m_ObjectHideFlags: 0
@@ -7252,7 +7266,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1700354465}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ToPlanetTwo, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
@@ -7675,7 +7689,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 400175189}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ToPlanetTwo, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
@@ -7960,7 +7974,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1713307723}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ToPlanetTwo, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
@@ -8242,7 +8256,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1713307723}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ToPlanetTwo, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
@@ -8388,7 +8402,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1713307723}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ToPlanetTwo, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
@@ -8450,7 +8464,7 @@ GameObject:
   - component: {fileID: 1095157082}
   - component: {fileID: 1095157081}
   - component: {fileID: 1095157080}
-  - component: {fileID: 1095157079}
+  - component: {fileID: 1095157083}
   m_Layer: 5
   m_Name: NEXT
   m_TagString: Untagged
@@ -8478,18 +8492,6 @@ RectTransform:
   m_AnchoredPosition: {x: 368, y: -116}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1095157079
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1095157077}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9a7456970d30471abe7c470d83dfd53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1095157080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8534,9 +8536,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1713307723}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ToPlanetTwo, Assembly-CSharp
         m_MethodName: StartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1095157083}
+        m_TargetAssemblyTypeName: QuestionNavigation, Assembly-CSharp
+        m_MethodName: GoToNextQuestion
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8584,6 +8598,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1095157077}
   m_CullTransparentMesh: 1
+--- !u!114 &1095157083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095157077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fcf276e180d0448c86536db24cf1fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentQuestion: {fileID: 1713307721}
+  nextQuestion: {fileID: 400175187}
 --- !u!1 &1164516446
 GameObject:
   m_ObjectHideFlags: 0
@@ -8680,7 +8708,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1713307723}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ToPlanetTwo, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
@@ -8826,7 +8854,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1700354465}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ToPlanetTwo, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
@@ -9242,7 +9270,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1700354465}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ToPlanetTwo, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
@@ -9795,7 +9823,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 400175189}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ToPlanetTwo, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
@@ -10986,7 +11014,6 @@ GameObject:
   - component: {fileID: 1700354468}
   - component: {fileID: 1700354467}
   - component: {fileID: 1700354466}
-  - component: {fileID: 1700354465}
   - component: {fileID: 1700354464}
   m_Layer: 5
   m_Name: Question 1
@@ -11005,18 +11032,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e1c373c56c144d73b9afee7dfa0eed2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1700354465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1700354463}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9a7456970d30471abe7c470d83dfd53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1700354466
@@ -11258,7 +11273,6 @@ GameObject:
   - component: {fileID: 1713307726}
   - component: {fileID: 1713307725}
   - component: {fileID: 1713307724}
-  - component: {fileID: 1713307723}
   - component: {fileID: 1713307722}
   m_Layer: 5
   m_Name: Question 2
@@ -11277,18 +11291,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e1c373c56c144d73b9afee7dfa0eed2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1713307723
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1713307721}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9a7456970d30471abe7c470d83dfd53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1713307724
@@ -11531,7 +11533,7 @@ GameObject:
   - component: {fileID: 1734317240}
   - component: {fileID: 1734317239}
   - component: {fileID: 1734317238}
-  - component: {fileID: 1734317237}
+  - component: {fileID: 1734317241}
   m_Layer: 5
   m_Name: NEXT
   m_TagString: Untagged
@@ -11559,18 +11561,6 @@ RectTransform:
   m_AnchoredPosition: {x: 368, y: -116}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1734317237
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1734317235}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9a7456970d30471abe7c470d83dfd53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1734317238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11615,8 +11605,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 400175189}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ToPlanetTwo, Assembly-CSharp
+        m_MethodName: StartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1734317241}
+        m_TargetAssemblyTypeName: ToPlanetThree, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
@@ -11665,6 +11667,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1734317235}
   m_CullTransparentMesh: 1
+--- !u!114 &1734317241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734317235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 221d5f3264b224d588744c208f0a49a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1779213537
 GameObject:
   m_ObjectHideFlags: 0
@@ -11898,7 +11912,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 400175189}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ToPlanetTwo, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
@@ -12044,7 +12058,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 400175189}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ToPlanetTwo, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
