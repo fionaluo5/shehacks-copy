@@ -4966,6 +4966,8 @@ GameObject:
   - component: {fileID: 271113072}
   - component: {fileID: 271113071}
   - component: {fileID: 271113076}
+  - component: {fileID: 271113078}
+  - component: {fileID: 271113077}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -4980,7 +4982,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 271113070}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9a7456970d30471abe7c470d83dfd53, type: 3}
   m_Name: 
@@ -5076,9 +5078,33 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 271113070}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e1c373c56c144d73b9afee7dfa0eed2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &271113077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 271113070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9a7456970d30471abe7c470d83dfd53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &271113078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 271113070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b87f50f54f8a0465c98af547363d77b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &316582829
@@ -5401,7 +5427,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000135444}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9a7456970d30471abe7c470d83dfd53, type: 3}
   m_Name: 
@@ -5450,8 +5476,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 271113071}
-        m_TargetAssemblyTypeName: ToPlanetTwo, Assembly-CSharp
+      - m_Target: {fileID: 271113078}
+        m_TargetAssemblyTypeName: ToPlanetFour, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
@@ -5891,9 +5917,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 271113076}
-        m_TargetAssemblyTypeName: Main, Assembly-CSharp
-        m_MethodName: Starting
+      - m_Target: {fileID: 271113071}
+        m_TargetAssemblyTypeName: ToPlanetTwo, Assembly-CSharp
+        m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
