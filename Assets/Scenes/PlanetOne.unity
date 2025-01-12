@@ -5870,11 +5870,11 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1000135445}
-  - {fileID: 1626762539}
   - {fileID: 949018401}
   - {fileID: 254535851}
   - {fileID: 1375374923}
+  - {fileID: 1626762539}
+  - {fileID: 1000135445}
   - {fileID: 2003719709}
   - {fileID: 1779864365}
   - {fileID: 421866663}
@@ -6480,7 +6480,7 @@ GameObject:
   - component: {fileID: 544700182}
   - component: {fileID: 544700181}
   m_Layer: 5
-  m_Name: NEXT
+  m_Name: Next Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7039,7 +7039,7 @@ GameObject:
   - component: {fileID: 821876885}
   - component: {fileID: 821876888}
   m_Layer: 5
-  m_Name: NEXT
+  m_Name: Next Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7185,6 +7185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentQuestion: {fileID: 1409152835}
   nextQuestion: {fileID: 1288163354}
+  previousQuestion: {fileID: 271113070}
 --- !u!1 &833738297
 GameObject:
   m_ObjectHideFlags: 0
@@ -7899,10 +7900,9 @@ GameObject:
   - component: {fileID: 1000135449}
   - component: {fileID: 1000135448}
   - component: {fileID: 1000135447}
-  - component: {fileID: 1000135446}
   - component: {fileID: 1000135450}
   m_Layer: 5
-  m_Name: NEXT
+  m_Name: Next Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7928,18 +7928,6 @@ RectTransform:
   m_AnchoredPosition: {x: 368, y: -116}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1000135446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000135444}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9a7456970d30471abe7c470d83dfd53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1000135447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8060,6 +8048,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentQuestion: {fileID: 271113070}
   nextQuestion: {fileID: 1409152835}
+  previousQuestion: {fileID: 0}
 --- !u!1 &1147224062
 GameObject:
   m_ObjectHideFlags: 0
@@ -8730,11 +8719,11 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 544700180}
-  - {fileID: 1835909578}
   - {fileID: 1561741049}
   - {fileID: 1378753310}
   - {fileID: 181856859}
+  - {fileID: 1835909578}
+  - {fileID: 544700180}
   - {fileID: 368252815}
   - {fileID: 1306699870}
   - {fileID: 919887977}
@@ -10404,11 +10393,11 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 821876883}
-  - {fileID: 1756796948}
   - {fileID: 952152658}
   - {fileID: 1290085563}
   - {fileID: 986365336}
+  - {fileID: 1756796948}
+  - {fileID: 821876883}
   - {fileID: 833738298}
   - {fileID: 1344589732}
   - {fileID: 1992718935}
@@ -10434,6 +10423,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentQuestion: {fileID: 1409152835}
   nextQuestion: {fileID: 1288163354}
+  previousQuestion: {fileID: 0}
 --- !u!1 &1450262429
 GameObject:
   m_ObjectHideFlags: 0
@@ -10890,8 +10880,9 @@ GameObject:
   - component: {fileID: 1626762542}
   - component: {fileID: 1626762541}
   - component: {fileID: 1626762540}
+  - component: {fileID: 1626762543}
   m_Layer: 5
-  m_Name: BACK
+  m_Name: Back Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10961,9 +10952,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1000135450}
+      - m_Target: {fileID: 1626762543}
         m_TargetAssemblyTypeName: QuestionNavigation, Assembly-CSharp
-        m_MethodName: GoToNextQuestion
+        m_MethodName: GoToPreviousQuestion
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11011,6 +11002,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1626762538}
   m_CullTransparentMesh: 1
+--- !u!114 &1626762543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626762538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fcf276e180d0448c86536db24cf1fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentQuestion: {fileID: 271113070}
+  nextQuestion: {fileID: 1409152835}
+  previousQuestion: {fileID: 0}
 --- !u!1 &1756796947
 GameObject:
   m_ObjectHideFlags: 0
@@ -11023,8 +11029,9 @@ GameObject:
   - component: {fileID: 1756796951}
   - component: {fileID: 1756796950}
   - component: {fileID: 1756796949}
+  - component: {fileID: 1756796952}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Back Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11106,6 +11113,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1756796952}
+        m_TargetAssemblyTypeName: QuestionNavigation, Assembly-CSharp
+        m_MethodName: GoToPreviousQuestion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1756796950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11144,6 +11163,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1756796947}
   m_CullTransparentMesh: 1
+--- !u!114 &1756796952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756796947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fcf276e180d0448c86536db24cf1fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentQuestion: {fileID: 1409152835}
+  nextQuestion: {fileID: 1288163354}
+  previousQuestion: {fileID: 271113070}
 --- !u!1 &1779864364
 GameObject:
   m_ObjectHideFlags: 0
@@ -11448,8 +11482,9 @@ GameObject:
   - component: {fileID: 1835909581}
   - component: {fileID: 1835909580}
   - component: {fileID: 1835909579}
+  - component: {fileID: 1835909582}
   m_Layer: 5
-  m_Name: BACK
+  m_Name: Back Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11531,6 +11566,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1835909582}
+        m_TargetAssemblyTypeName: QuestionNavigation, Assembly-CSharp
+        m_MethodName: GoToPreviousQuestion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1835909580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11569,6 +11616,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1835909577}
   m_CullTransparentMesh: 1
+--- !u!114 &1835909582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835909577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fcf276e180d0448c86536db24cf1fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentQuestion: {fileID: 1288163354}
+  nextQuestion: {fileID: 0}
+  previousQuestion: {fileID: 1409152835}
 --- !u!1 &1952454185
 GameObject:
   m_ObjectHideFlags: 0

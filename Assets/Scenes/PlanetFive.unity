@@ -8495,6 +8495,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentQuestion: {fileID: 1255307278}
   nextQuestion: {fileID: 1159872966}
+  previousQuestion: {fileID: 0}
 --- !u!1 &1134404762
 GameObject:
   m_ObjectHideFlags: 0
@@ -9456,6 +9457,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentQuestion: {fileID: 824441169}
   nextQuestion: {fileID: 1255307278}
+  previousQuestion: {fileID: 0}
 --- !u!1 &1398701336
 GameObject:
   m_ObjectHideFlags: 0
@@ -12270,6 +12272,7 @@ GameObject:
   - component: {fileID: 2089042822}
   - component: {fileID: 2089042821}
   - component: {fileID: 2089042820}
+  - component: {fileID: 2089042823}
   m_Layer: 5
   m_Name: NEXT
   m_TagString: Untagged
@@ -12353,6 +12356,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2089042823}
+        m_TargetAssemblyTypeName: DisplayResults, Assembly-CSharp
+        m_MethodName: ShowResults
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2089042821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12391,6 +12406,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2089042817}
   m_CullTransparentMesh: 1
+--- !u!114 &2089042823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089042817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ed9bda78960b4adb8731fb9562a2f07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2094116536
 GameObject:
   m_ObjectHideFlags: 0
