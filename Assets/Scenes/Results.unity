@@ -710,7 +710,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
-  m_characterSpacing: 0
+  m_characterSpacing: 1.32
   m_wordSpacing: 38.26
   m_lineSpacing: 58.9
   m_lineSpacingMax: 0
@@ -1572,7 +1572,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
-  m_characterSpacing: 0
+  m_characterSpacing: 4.2
   m_wordSpacing: 38.26
   m_lineSpacing: 58.9
   m_lineSpacingMax: 0
@@ -1631,7 +1631,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1551368514
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2154,12 +2154,12 @@ GameObject:
   - component: {fileID: 1784226622}
   - component: {fileID: 1784226621}
   m_Layer: 5
-  m_Name: Xorath (1)
+  m_Name: Quella
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1784226620
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2321,8 +2321,8 @@ MonoBehaviour:
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 38.26
+  m_characterSpacing: 6.5
+  m_wordSpacing: 52.6
   m_lineSpacing: 58.9
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
